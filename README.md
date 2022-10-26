@@ -1,6 +1,9 @@
-# API practice
+# Travel advisor app
+A simple practice app made using
+-React
+-MaterialUI
+-Axios
 
-A few simple React projects I made to practice using APIs. Each project is in its own separate branch.
-
-### Travel advisor app
-Made using React, MaterialUI, Open Weather Map API and Travel Advisor API
+APIs used:
+-Google maps
+-[Travel advisor](https://rapidapi.com/apidojo/api/travel-advisor/)
