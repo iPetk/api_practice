@@ -1,5 +1,5 @@
 # Travel advisor app
-Made using
+A simple practice app made using
 -React
 -MaterialUI
 -Axios
