@@ -41,8 +41,7 @@ export default function List({places, childClicked, isLoading, type, setType, ra
         </Select>
       </FormControl>
       <Grid container spacing={3} className={classes.list}>
-        {/* Filters only places that have names to exclude 'empty' ads */}
-        {places?.filter(place => !!place.name).map((place, i) => (
+        {places?.map((place, i) => (
           <Grid ref={elRefs[i]} key={i} item xs={12}>
             <PlaceDetails 
               selected={Number(childClicked) === i} 

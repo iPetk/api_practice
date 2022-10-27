@@ -26,7 +26,7 @@ export default function Map({ setCoordinates, setBounds, coordinates, places, se
         }}
         onChildClick={(child) => setChildClicked(child)}
       >
-        {places?.filter(place => !!place.name).map((place, i) => (
+        {places?.map((place, i) => (
           <div 
             className={classes.markerContainer}
             lat={Number(place.latitude)}
