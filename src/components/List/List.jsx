@@ -4,10 +4,8 @@ import { CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, 
 import PlaceDetails from '../PlaceDetails/PlaceDetails';
 import useStyles from './styles';
 
-export default function List({places, childClicked, isLoading}) {
+export default function List({places, childClicked, isLoading, type, setType, rating, setRating}) {
   const classes = useStyles();
-  const [type, setType] = useState('restaurants');
-  const [rating, setRating] = useState('');
 
   console.log({ childClicked});
 
@@ -40,7 +38,6 @@ export default function List({places, childClicked, isLoading}) {
           <MenuItem value={0}>All</MenuItem>
           <MenuItem value={3}>Above 3.0</MenuItem>
           <MenuItem value={4}>Above 4.0</MenuItem>
-          <MenuItem value={4.5}>Above 4.5</MenuItem>
         </Select>
       </FormControl>
       <Grid container spacing={3} className={classes.list}>
