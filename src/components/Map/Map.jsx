@@ -23,7 +23,7 @@ export default function Map({ setCoordinates, setBounds, coordinates }) {
         onChange={(e) => {
           console.log(e);
           setCoordinates({ lat: e.center.lat, lng: e.center.lng });
-          setBounds({ ne: e.marginBounds.ne, sw: e.marginBoundssw });
+          setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw });
         }}
         onChildClick={''}
       >
