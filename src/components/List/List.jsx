@@ -30,7 +30,8 @@ export default function List({places}) {
         </Select>
       </FormControl>
       <Grid container spacing={3} className={classes.list}>
-        {places?.map((place, i) => (
+        {/* Filters only places that have names to exclude 'empty' ads */}
+        {places?.filter(place => !!place.name).map((place, i) => (
           <Grid item key={i} xs={12}>
             <PlaceDetails place={place} />
           </Grid>
