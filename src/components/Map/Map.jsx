@@ -12,7 +12,7 @@ export default function Map({ setCoordinates, setBounds, coordinates, places, se
 
   return (
     <div className={classes.mapContainer}>
-      {console.log(coordinates)}
+      {  console.log(process.env.REACT_APP_RAPID_API_TRAVEL_API_KEY)}
 
       <GoogleMapReact bootstrapURLKeys={{ key: 'AIzaSyD4bwSTUBOaEkoGoU3DdqhhnjIpfdHPSso'}}
         defaultCenter={coordinates}
